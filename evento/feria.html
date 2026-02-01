@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feria de Exhibición - II Encuentro de Innovación Empresarial</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        .feria-page { padding: 60px 0; background-color: #fcfcfc; }
+        
+        .feria-intro {
+            max-width: 850px;
+            margin: 0 auto 50px;
+            text-align: center;
+        }
+
+        .feria-intro p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .proyectos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .proyecto-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--verde-logo);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .proyecto-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .num-proyecto {
+            font-weight: 900;
+            color: var(--cian-dark);
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .proyecto-card h3 {
+            color: var(--cian-dark);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            line-height: 1.3;
+        }
+
+        .proyecto-card p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .badge-estudiante {
+            font-size: 0.8rem;
+            background: #f1f8e9;
+            color: var(--verde-logo);
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .icon-box {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+        <a href="index.html" class="logo-wrapper" style="text-decoration: none;">
+            <img src="logo.jpeg" alt="Logo EI" class="nav-logo-img">
+            <div class="logo-text">
+                <strong>II Encuentro de Innovación Empresarial</strong> | UNC
+            </div>
+        </a>
+            <ul>
+                <li><a href="index.html">Volver al Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li> 
+                <li><a href="programa.html">Programa</a></li>
+                <li><a href="feria.html">Feria</a></li>
+                <li><a href="auspicios.html">Auspicios</a></li>
+                <li><a href="https://forms.gle/f2sRZHA9B5eGmEsH6" class="btn-inscripcion" target="_blank">Inscripción</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container feria-page">
+        <h1 class="title-section">Exhibición de Proyectos Estudiantiles</h1>
+        
+        <div class="feria-intro">
+            <p>En esta sección presentamos las soluciones tecnológicas desarrolladas íntegramente por los estudiantes de la <strong>Promoción 2021 de Ingeniería de Sistemas</strong>. Cada proyecto aplica conceptos de la Industria 4.0 para resolver desafíos reales en sectores como la agricultura, la industria láctea y la gestión empresarial.</p>
+        </div>
+
+        <div class="proyectos-grid">
+            
+            <div class="proyecto-card">
+                <div>
+                    <span class="num-proyecto">01</span>
+                    <div class="icon-box">🤖</div>
+                    <h3>Sistema Híbrido de IOT por Agentes de IA</h3>
+                    <p>Integración avanzada de dispositivos sensores con agentes inteligentes para crear entornos industriales capaces de tomar decisiones autónomas y optimizar recursos.</p>
+                </div>
+                <span class="badge-estudiante">Ingeniería de Sistemas UNC</span>
+            </div>
+
+            <div class="proyecto-card">
+                <div>
+                    <span class="num-proyecto">02</span>
+                    <div class="icon-box">🐟</div>
+                    <h3>BIOCICLO - Sistema de Acuaponía con IOT</h3>
+                    <p>Un prototipo sostenible que monitorea y regula automáticamente los niveles de pH, temperatura y nutrientes en sistemas de cultivo combinado de peces y plantas.</p>
+                </div>
+                <span class="badge-estudiante">Ingeniería de Sistemas UNC</span>
+            </div>
+
+            <div class="proyecto-card">
+                <div>
+                    <span class="num-proyecto">03</span>
+                    <div class="icon-box">⚙️</div>
+                    <h3>Agentes de IA en la Automatización de Procesos</h3>
+                    <p>Implementación de algoritmos de inteligencia artificial para la digitalización y flujo automático de tareas en el entorno operativo de empresas locales.</p>
+                </div>
+                <span class="badge-estudiante">Ingeniería de Sistemas UNC</span>
+            </div>
+
+            <div class="proyecto-card">
+                <div>
+                    <span class="num-proyecto">04</span>
+                    <div class="icon-box">🥛</div>
+                    <h3>Milktrace 360 - Monitoreo para Empresas Lácteas</h3>
+                    <p>Sistema especializado en la trazabilidad y control de calidad mediante sensores IOT, garantizando la seguridad alimentaria en la industria láctea regional.</p>
+                </div>
+                <span class="badge-estudiante">Ingeniería de Sistemas UNC</span>
+            </div>
+
+            <div class="proyecto-card">
+                <div>
+                    <span class="num-proyecto">05</span>
+                    <div class="icon-box">📋</div>
+                    <h3>Sistema Automático de Control de Personal</h3>
+                    <p>Herramienta digital para la gestión eficiente de asistencia y productividad, eliminando procesos manuales y mejorando la transparencia organizacional.</p>
+                </div>
+                <span class="badge-estudiante">Ingeniería de Sistemas UNC</span>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>NOSOTROS</h4>
+                <ul>
+                    <li><a href="nosotros.html">¿Qué es el Encuentro?</a></li>
+                    <li><a href="nosotros.html">Objetivos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>EVENTO</h4>
+                <ul>
+                    <li><a href="programa.html">Programa</a></li>
+                    <li><a href="feria.html">Feria</a></li>
+                    <li><a href="https://forms.gle/f2sRZHA9B5eGmEsH6" target="_blank">Inscripciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>CONTÁCTANOS</h4>
+                <div class="contact-item">
+                    <span class="footer-icon">📞</span>
+                    <p>+ 51 930 778 127</p>
+                </div>
+                <div class="contact-item">
+                    <span class="footer-icon">📧</span>
+                    <p>emprendimientotecno2025@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>SÍGUENOS</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/encuentroinnova" class="social-btn" target="_blank">FB</a>
+                    <a href="https://www.instagram.com/encuentroinnova/" class="social-btn" target="_blank">IG</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Escuela Profesional de Ingeniería de Sistemas - UNC | Promoción 2021</p>
+        </div>
+    </footer>
+
+</body>
+</html>

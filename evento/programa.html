@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa Oficial - II Encuentro de Innovación Empresarial</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        .programa-page { padding: 60px 0; }
+        .dia-selector { text-align: center; margin-bottom: 40px; }
+        .table-container { margin-bottom: 50px; overflow-x: auto; }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        th {
+            background-color: var(--cian-dark);
+            color: white;
+            padding: 20px;
+            text-align: left;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+            font-size: 0.95rem;
+        }
+
+        tr:hover { background-color: #f9fdfd; }
+
+        .tag-tema {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            background: var(--verde-logo);
+            color: white;
+        }
+
+        .hora { font-weight: bold; color: var(--cian-dark); white-space: nowrap; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+        <a href="index.html" class="logo-wrapper" style="text-decoration: none;">
+            <img src="logo.jpeg" alt="Logo EI" class="nav-logo-img">
+            <div class="logo-text">
+                <strong>II Encuentro de Innovación Empresarial</strong> | UNC
+            </div>
+        </a>
+            <ul>
+                <li><a href="index.html">Volver al Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li> 
+                <li><a href="programa.html">Programa</a></li>
+                <li><a href="feria.html">Feria</a></li>
+                <li><a href="auspicios.html">Auspicios</a></li>
+                <li><a href="https://forms.gle/f2sRZHA9B5eGmEsH6" class="btn-inscripcion" target="_blank">Inscripción</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container programa-page">
+        <h1 class="title-section">Cronograma Oficial de Ponencias</h1>
+
+        <div class="programa-intro">
+        <p>Presentamos el ciclo oficial de conferencias magistrales del II Encuentro de Innovación Empresarial. Un espacio diseñado para profundizar en los pilares de la Industria 4.0 de la mano de expertos del sector.</p>
+        <br>
+        <div class="meta-tags">
+            <span>🎓 Certificación por ponencia</span>
+        </div>
+
+        <div class="dia-container">
+            <h2 class="dia-title">Jueves 26 de febrero del 2026</h2>
+            <table class="tabla-programa">
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Ponencia / Actividad</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="hora">08:30 am - 09:00 am</td>
+                        <td><h4>Inauguración del Evento</h4></td>
+                        <td>Recepción de invitados y apertura oficial.</td>
+                    </tr>
+                    <tr>
+                        <td class="hora">09:00 am - 09:30 am</td>
+                        <td>
+                            <span class="tipo-tag">Ponencia 01</span>
+                            <h4>Internet de las Cosas en la Industria</h4>
+                            <span class="ponente">Ing. Luis Alberto Córdova Ayac</span>
+                        </td>
+                        <td>Impacto de sensores y conectividad en procesos industriales.</td>
+                    </tr>
+                    <tr>
+                        <td class="hora">10:00 am - 10:30 am</td>
+                        <td>
+                            <span class="tipo-tag">Ponencia 02</span>
+                            <h4>Infraestructura de Tecnología Industrial 4.0</h4>
+                            <span class="ponente">Jeiner Alviter Rubio Acuña</span>
+                        </td>
+                        <td>Arquitectura técnica necesaria para la digitalización.</td>
+                    </tr>
+                    <tr>
+                        <td class="hora">11:00 am - 11:30 am</td>
+                        <td>
+                            <span class="tipo-tag">Ponencia 03</span>
+                            <h4>Inteligencia Artificial en servicios mineros</h4>
+                            <span class="ponente">Ing. Giovanna Tito Garcia</span>
+                        </td>
+                        <td>Optimización y predicción en el sector minero mediante IA.</td>
+                    </tr>
+                    <tr class="almuerzo-row">
+                        <td class="hora">12:00 pm - 03:00 pm</td>
+                        <td colspan="2">RECESO / ALMUERZO LIBRE</td>
+                    </tr>
+                    <tr>
+                        <td class="hora">03:00 pm - 03:30 pm</td>
+                        <td>
+                            <span class="tipo-tag">Ponencia 04</span>
+                            <h4>Liderazgo Tecnológico y Transformación Digital</h4>
+                            <span class="ponente">Ing. Kelly Gabriela Salgado Chilón</span>
+                        </td>
+                        <td>Gestión estratégica del cambio tecnológico en las empresas.</td>
+                    </tr>
+                    <tr>
+                        <td class="hora">04:00 pm - 04:30 pm</td>
+                        <td>
+                            <span class="tipo-tag">Ponencia 05</span>
+                            <h4>Ciberseguridad</h4>
+                            <span class="ponente">Ing. Paul Rodas</span>
+                        </td>
+                        <td>Huella digital: la protección de la identidad en entornos industriales.</td>
+                    </tr>
+                    <tr>
+                        <td class="hora">05:00 pm - 05:30 pm</td>
+                        <td>
+                            <span class="tipo-tag">Ponencia 06</span>
+                            <h4>Big Data y Analítica para la Toma de Decisiones</h4>
+                            <span class="ponente">Ing. Franki Briones Prieto</span>
+                        </td>
+                        <td>Transformación Digital para MYPEs mediante el uso de datos.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <div class="dia-container">
+            <h2 class="dia-title">Viernes 27 de febrero del 2026</h2>
+            <table class="tabla-programa">
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Ponencia / Empresa</th>
+                        <th>Eje Temático</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="hora">10:00 am - 10:30 am</td>
+                        <td>
+                            <span class="tipo-tag">Ponencia Industrial</span>
+                            <h4>MINERA GOLD FIELDS</h4>
+                        </td>
+                        <td>Implementación de IIOT (Industrial IoT).</td>
+                    </tr>
+                    <tr>
+                        <td class="hora">11:00 am - 11:30 am</td>
+                        <td>
+                            <span class="tipo-tag">Ponencia Industrial</span>
+                            <h4>MINERA YANACOCHA</h4>
+                        </td>
+                        <td>Tecnología de Gemelos Digitales aplicada.</td>
+                    </tr>
+                    <tr>
+                        <td class="hora">12:15 pm - 12:30 pm</td>
+                        <td>
+                            <span class="tipo-tag">Ponencia Industrial</span>
+                            <h4>MINERA SOUTHERN PERÚ</h4>
+                        </td>
+                        <td>Automatización de procesos en tratamiento de agua.</td>
+                    </tr>
+                    <tr>
+                        <td class="hora">12:45 pm</td>
+                        <td colspan="2" style="text-align:center; color:var(--verde-logo); font-weight:900;">CLAUSURA DEL EVENTO</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+   <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>NOSOTROS</h4>
+                <ul>
+                    <li><a href="nosotros.html">¿Qué es el Encuentro?</a></li>
+                    <li><a href="nosotros.html">Objetivos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>EVENTO</h4>
+                <ul>
+                    <li><a href="programa.html">Programa</a></li>
+                    <li><a href="feria.html">Feria</a></li>
+                    <li><a href="https://forms.gle/f2sRZHA9B5eGmEsH6" target="_blank">Inscripciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>CONTÁCTANOS</h4>
+                <div class="contact-item">
+                    <span class="footer-icon">📞</span>
+                    <p>+ 51 930 778 127</p>
+                </div>
+                <div class="contact-item">
+                    <span class="footer-icon">📧</span>
+                    <p>emprendimientotecno2025@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>SÍGUENOS</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/encuentroinnova" class="social-btn" target="_blank">FB</a>
+                    <a href="https://www.instagram.com/encuentroinnova/" class="social-btn" target="_blank">IG</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Escuela Profesional de Ingeniería de Sistemas - UNC | Promoción 2021</p>
+        </div>
+    </footer>
+
+</body>
+</html>

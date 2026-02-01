@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auspiciadores - II Encuentro de Innovación Empresarial</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        .auspicios-page { padding: 80px 0; background-color: #fcfcfc; }
+        
+        .auspicios-intro {
+            max-width: 800px;
+            margin: 0 auto 60px;
+            text-align: center;
+        }
+
+        .auspicios-intro p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .categoria-auspicio {
+            margin-bottom: 80px;
+            text-align: center;
+        }
+
+        .categoria-auspicio h2 {
+            color: var(--cian-dark);
+            font-size: 1.8rem;
+            margin-bottom: 40px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .categoria-auspicio h2::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--verde-logo);
+        }
+
+        .logos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .logo-item {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            width: 100%;
+            max-width: 250px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+            border: 1px solid #eee;
+        }
+
+        .logo-item:hover {
+            transform: scale(1.05);
+            border-color: var(--verde-logo);
+        }
+
+        .logo-item img {
+            max-width: 100%;
+            max-height: 100%;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: 0.3s;
+        }
+
+        .logo-item:hover img {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+
+        .llamado-auspicio {
+            background: var(--cian-dark);
+            color: white;
+            padding: 50px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .llamado-auspicio h3 { margin-bottom: 15px; }
+        .llamado-auspicio p { margin-bottom: 25px; opacity: 0.9; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo-wrapper" style="text-decoration: none;">
+                <img src="logo.jpeg" alt="Logo EI" class="nav-logo-img">
+                <div class="logo-text">
+                    <strong>II Encuentro de Innovación Empresarial</strong> | UNC
+                </div>
+            </a>
+            <ul>
+                <li><a href="index.html">Volver al Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li> 
+                <li><a href="programa.html">Programa</a></li>
+                <li><a href="feria.html">Feria</a></li>
+                <li><a href="auspicios.html">Auspicios</a></li>
+                <li><a href="https://forms.gle/f2sRZHA9B5eGmEsH6" class="btn-inscripcion" target="_blank">Inscripción</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container auspicios-page">
+        <h1 class="title-section">Nuestros Auspiciadores</h1>
+        
+        <div class="auspicios-intro">
+            <p>El II Encuentro de Innovación Empresarial es posible gracias al valioso apoyo de empresas e instituciones comprometidas con el desarrollo tecnológico y la formación de los futuros ingenieros de Cajamarca.</p>
+        </div>
+
+        <section class="categoria-auspicio">
+            <h2>Aliados Estratégicos</h2>
+            <div class="logos-grid">
+                <div class="logo-item">
+                    <p style="color: #ccc; font-weight: bold;">LOGO EMPRESA 1</p>
+                    </div>
+                <div class="logo-item">
+                    <p style="color: #ccc; font-weight: bold;">LOGO EMPRESA 2</p>
+                </div>
+                <div class="logo-item">
+                    <p style="color: #ccc; font-weight: bold;">LOGO EMPRESA 3</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="llamado-auspicio">
+            <h3>¿Deseas apoyar esta iniciativa?</h3>
+            <p>Tu organización puede ser parte del cambio tecnológico en nuestra región. Contáctanos para conocer los beneficios de auspicio y colaboración.</p>
+            <a href="https://wa.me/51930778127?text=Hola,%20estoy%20interesado%20en%20ser%20auspiciador%20del%20II%20Encuentro%20de%20Innovación%20Empresarial." class="btn-inscripcion" style="background: var(--verde-logo); text-decoration: none;">Contactar al Comité </a>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>NOSOTROS</h4>
+                <ul>
+                    <li><a href="nosotros.html">¿Qué es el Encuentro?</a></li>
+                    <li><a href="nosotros.html">Objetivos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>EVENTO</h4>
+                <ul>
+                    <li><a href="programa.html">Programa</a></li>
+                    <li><a href="feria.html">Feria</a></li>
+                    <li><a href="https://forms.gle/f2sRZHA9B5eGmEsH6" target="_blank">Inscripciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>CONTÁCTANOS</h4>
+                <div class="contact-item">
+                    <span class="footer-icon">📞</span>
+                    <p>+ 51 930 778 127</p>
+                </div>
+                <div class="contact-item">
+                    <span class="footer-icon">📧</span>
+                    <p>emprendimientotecno2025@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>SÍGUENOS</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/encuentroinnova" class="social-btn" target="_blank">FB</a>
+                    <a href="https://www.instagram.com/encuentroinnova/" class="social-btn" target="_blank">IG</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Escuela Profesional de Ingeniería de Sistemas - UNC | Promoción 2021</p>
+        </div>
+    </footer>
+
+</body>
+</html>
